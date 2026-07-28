@@ -1,0 +1,1 @@
+export { EventGalleryScreen } from './EventExtraStubs';

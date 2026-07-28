@@ -1,0 +1,1 @@
+export { EventAttendanceScreen } from './EventExtraStubs';

@@ -1,0 +1,13 @@
+{
+  "id": "usr-001",
+  "name": "Amina Hassan",
+  "email": "amina@martisoor.com",
+  "phone": "+252 61 234 5678",
+  "avatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
+  "memberSince": "2024-03-15",
+  "address": {
+    "line1": "42 Harbor Lane",
+    "city": "Mogadishu",
+    "country": "Somalia"
+  }
+}

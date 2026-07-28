@@ -1,0 +1,1872 @@
+[
+  {
+    "id": "mkt-001",
+    "eventId": "evt-001",
+    "title": "Harbor Evening Soirée",
+    "description": "An intimate coastal gathering with live music and curated dining.",
+    "coverImage": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1000&q=80",
+    "location": "Palm Court Ballroom",
+    "date": "2026-07-13",
+    "time": "19:00",
+    "organizer": "Villa Atelier",
+    "organizerAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    "category": "Soirée",
+    "status": "completed",
+    "startingPrice": 40,
+    "remainingTickets": 0,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 295,
+        "capacity": 10,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 75,
+        "capacity": 30,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 40,
+        "capacity": 11,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 150,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-002",
+    "eventId": "evt-002",
+    "title": "Founders Dinner",
+    "description": "Private dinner for partners and early supporters.",
+    "coverImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1000&q=80",
+    "location": "Harbor Rooftop",
+    "date": "2026-09-30",
+    "time": "20:30",
+    "organizer": "Pearl Productions",
+    "organizerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
+    "category": "Dinner",
+    "status": "draft",
+    "startingPrice": 85,
+    "remainingTickets": 74,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 10,
+        "remaining": 11,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 85,
+        "capacity": 40,
+        "remaining": 33,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 14,
+        "remaining": 15,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 90,
+        "capacity": 16,
+        "remaining": 15,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-004",
+    "eventId": "evt-004",
+    "title": "Listening Night",
+    "description": "Acoustic evening with seated hospitality and signature pours.",
+    "coverImage": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1000&q=80",
+    "location": "Liido Pavilion, Mogadishu",
+    "date": "2026-09-13",
+    "time": "17:30",
+    "organizer": "Martisoor Hosts",
+    "organizerAvatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
+    "category": "Concert",
+    "status": "upcoming",
+    "startingPrice": 35,
+    "remainingTickets": 91,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 170,
+        "capacity": 12,
+        "remaining": 14,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 45,
+        "capacity": 50,
+        "remaining": 41,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 35,
+        "capacity": 18,
+        "remaining": 18,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 20,
+        "remaining": 18,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-006",
+    "eventId": "evt-006",
+    "title": "Corporate Summit",
+    "description": "Executive summit with keynote, breakouts, and networking.",
+    "coverImage": "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=1000&q=80",
+    "location": "Harbor Rooftop",
+    "date": "2026-06-12",
+    "time": "20:00",
+    "organizer": "Gold Room Events",
+    "organizerAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+    "category": "Corporate",
+    "status": "completed",
+    "startingPrice": 65,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 220,
+        "capacity": 24,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 65,
+        "capacity": 100,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 36,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 150,
+        "capacity": 40,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-007",
+    "eventId": "evt-007",
+    "title": "Charity Gala",
+    "description": "Black-tie fundraiser with auction and live performances.",
+    "coverImage": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1000&q=80",
+    "location": "Coral Bay Club",
+    "date": "2026-05-18",
+    "time": "17:30",
+    "organizer": "Villa Atelier",
+    "organizerAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    "category": "Gala",
+    "status": "completed",
+    "startingPrice": 30,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 245,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 75,
+        "capacity": 75,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 30,
+        "capacity": 27,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 90,
+        "capacity": 30,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-008",
+    "eventId": "evt-008",
+    "title": "Product Launch",
+    "description": "Reveal event with demos, press, and VIP lounge access.",
+    "coverImage": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1000&q=80",
+    "location": "Liido Pavilion, Mogadishu",
+    "date": "2026-08-27",
+    "time": "20:15",
+    "organizer": "Pearl Productions",
+    "organizerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
+    "category": "Launch",
+    "status": "upcoming",
+    "startingPrice": 35,
+    "remainingTickets": 46,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 270,
+        "capacity": 10,
+        "remaining": 7,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 85,
+        "capacity": 30,
+        "remaining": 21,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 35,
+        "capacity": 11,
+        "remaining": 9,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 105,
+        "capacity": 12,
+        "remaining": 9,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-010",
+    "eventId": "evt-010",
+    "title": "Art Night",
+    "description": "Gallery walk with canapés and collector conversations.",
+    "coverImage": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=1000&q=80",
+    "location": "Coral Bay Club",
+    "date": "2026-08-30",
+    "time": "17:30",
+    "organizer": "Villa Atelier",
+    "organizerAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    "category": "Exhibition",
+    "status": "upcoming",
+    "startingPrice": 75,
+    "remainingTickets": 235,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 245,
+        "capacity": 30,
+        "remaining": 35,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 75,
+        "capacity": 125,
+        "remaining": 106,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 45,
+        "remaining": 47,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 150,
+        "capacity": 50,
+        "remaining": 47,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-013",
+    "eventId": "evt-013",
+    "title": "Harbor Evening Soirée #2",
+    "description": "An intimate coastal gathering with live music and curated dining.",
+    "coverImage": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1000&q=80",
+    "location": "Coral Bay Club",
+    "date": "2026-05-26",
+    "time": "12:15",
+    "organizer": "Martisoor Hosts",
+    "organizerAvatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
+    "category": "Soirée",
+    "status": "completed",
+    "startingPrice": 45,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 45,
+        "capacity": 50,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 20,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-014",
+    "eventId": "evt-014",
+    "title": "Founders Dinner #2",
+    "description": "Private dinner for partners and early supporters.",
+    "coverImage": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1000&q=80",
+    "location": "Palm Court Ballroom",
+    "date": "2026-08-03",
+    "time": "20:30",
+    "organizer": "Harbor Collective",
+    "organizerAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    "category": "Dinner",
+    "status": "upcoming",
+    "startingPrice": 30,
+    "remainingTickets": 29,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 145,
+        "capacity": 10,
+        "remaining": 4,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 55,
+        "capacity": 20,
+        "remaining": 13,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 30,
+        "capacity": 8,
+        "remaining": 6,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 135,
+        "capacity": 8,
+        "remaining": 6,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-015",
+    "eventId": "evt-015",
+    "title": "Garden Brunch #2",
+    "description": "Daytime celebration with botanical styling and open-air seating.",
+    "coverImage": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1000&q=80",
+    "location": "Midnight Conservatory",
+    "date": "2026-06-14",
+    "time": "20:00",
+    "organizer": "Gold Room Events",
+    "organizerAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+    "category": "Brunch",
+    "status": "completed",
+    "startingPrice": 35,
+    "remainingTickets": 0,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 170,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 65,
+        "capacity": 50,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 35,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 150,
+        "capacity": 20,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-016",
+    "eventId": "evt-016",
+    "title": "Listening Night #2",
+    "description": "Acoustic evening with seated hospitality and signature pours.",
+    "coverImage": "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=1000&q=80",
+    "location": "Skyline Gallery",
+    "date": "2026-09-21",
+    "time": "12:00",
+    "organizer": "Villa Atelier",
+    "organizerAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    "category": "Concert",
+    "status": "draft",
+    "startingPrice": 40,
+    "remainingTickets": 71,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 195,
+        "capacity": 10,
+        "remaining": 11,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 75,
+        "capacity": 40,
+        "remaining": 32,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 40,
+        "capacity": 14,
+        "remaining": 14,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 90,
+        "capacity": 16,
+        "remaining": 14,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-017",
+    "eventId": "evt-017",
+    "title": "Wedding Reception #2",
+    "description": "Warm reception with gold accents and family-style service.",
+    "coverImage": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1000&q=80",
+    "location": "Gold Room, City Center",
+    "date": "2026-04-17",
+    "time": "17:30",
+    "organizer": "Pearl Productions",
+    "organizerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
+    "category": "Wedding",
+    "status": "completed",
+    "startingPrice": 85,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 220,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 85,
+        "capacity": 75,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 27,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 105,
+        "capacity": 30,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-018",
+    "eventId": "evt-018",
+    "title": "Corporate Summit #2",
+    "description": "Executive summit with keynote, breakouts, and networking.",
+    "coverImage": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1000&q=80",
+    "location": "Palm Court Ballroom",
+    "date": "2026-03-04",
+    "time": "11:15",
+    "organizer": "Skyline Social",
+    "organizerAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+    "category": "Corporate",
+    "status": "completed",
+    "startingPrice": 30,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 245,
+        "capacity": 24,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 95,
+        "capacity": 100,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 30,
+        "capacity": 36,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 40,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-019",
+    "eventId": "evt-019",
+    "title": "Charity Gala #2",
+    "description": "Black-tie fundraiser with auction and live performances.",
+    "coverImage": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1000&q=80",
+    "location": "The Pearl Hall",
+    "date": "2026-05-04",
+    "time": "12:15",
+    "organizer": "Martisoor Hosts",
+    "organizerAvatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
+    "category": "Gala",
+    "status": "completed",
+    "startingPrice": 35,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 270,
+        "capacity": 10,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 45,
+        "capacity": 40,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 35,
+        "capacity": 14,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 135,
+        "capacity": 16,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-020",
+    "eventId": "evt-020",
+    "title": "Product Launch #2",
+    "description": "Reveal event with demos, press, and VIP lounge access.",
+    "coverImage": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=1000&q=80",
+    "location": "Palm Court Ballroom",
+    "date": "2026-05-30",
+    "time": "11:30",
+    "organizer": "Pearl Productions",
+    "organizerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
+    "category": "Launch",
+    "status": "completed",
+    "startingPrice": 85,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 220,
+        "capacity": 24,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 85,
+        "capacity": 100,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 36,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 90,
+        "capacity": 40,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-022",
+    "eventId": "evt-022",
+    "title": "Art Night #2",
+    "description": "Gallery walk with canapés and collector conversations.",
+    "coverImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1000&q=80",
+    "location": "Midnight Conservatory",
+    "date": "2026-06-02",
+    "time": "17:00",
+    "organizer": "Martisoor Hosts",
+    "organizerAvatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
+    "category": "Exhibition",
+    "status": "completed",
+    "startingPrice": 45,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 270,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 45,
+        "capacity": 75,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 27,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 30,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-023",
+    "eventId": "evt-023",
+    "title": "Rooftop Sunset #2",
+    "description": "Golden-hour cocktails above the city skyline.",
+    "coverImage": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1000&q=80",
+    "location": "The Pearl Hall",
+    "date": "2026-07-16",
+    "time": "11:00",
+    "organizer": "Harbor Collective",
+    "organizerAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    "category": "Social",
+    "status": "completed",
+    "startingPrice": 40,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 295,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 55,
+        "capacity": 50,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 40,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 135,
+        "capacity": 20,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-026",
+    "eventId": "evt-026",
+    "title": "Founders Dinner #3",
+    "description": "Private dinner for partners and early supporters.",
+    "coverImage": "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=1000&q=80",
+    "location": "Coral Bay Club",
+    "date": "2026-10-23",
+    "time": "18:30",
+    "organizer": "Pearl Productions",
+    "organizerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
+    "category": "Dinner",
+    "status": "upcoming",
+    "startingPrice": 35,
+    "remainingTickets": 46,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 170,
+        "capacity": 10,
+        "remaining": 7,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 85,
+        "capacity": 30,
+        "remaining": 21,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 35,
+        "capacity": 11,
+        "remaining": 9,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 105,
+        "capacity": 12,
+        "remaining": 9,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-027",
+    "eventId": "evt-027",
+    "title": "Garden Brunch #3",
+    "description": "Daytime celebration with botanical styling and open-air seating.",
+    "coverImage": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1000&q=80",
+    "location": "Seaside Terrace",
+    "date": "2026-10-16",
+    "time": "17:30",
+    "organizer": "Skyline Social",
+    "organizerAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+    "category": "Brunch",
+    "status": "upcoming",
+    "startingPrice": 40,
+    "remainingTickets": 109,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 195,
+        "capacity": 14,
+        "remaining": 16,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 95,
+        "capacity": 60,
+        "remaining": 49,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 40,
+        "capacity": 22,
+        "remaining": 22,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 24,
+        "remaining": 22,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-028",
+    "eventId": "evt-028",
+    "title": "Listening Night #3",
+    "description": "Acoustic evening with seated hospitality and signature pours.",
+    "coverImage": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1000&q=80",
+    "location": "Gold Room, City Center",
+    "date": "2026-03-22",
+    "time": "20:00",
+    "organizer": "Martisoor Hosts",
+    "organizerAvatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
+    "category": "Concert",
+    "status": "completed",
+    "startingPrice": 45,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 220,
+        "capacity": 24,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 45,
+        "capacity": 100,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 36,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 135,
+        "capacity": 40,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-029",
+    "eventId": "evt-029",
+    "title": "Wedding Reception #3",
+    "description": "Warm reception with gold accents and family-style service.",
+    "coverImage": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1000&q=80",
+    "location": "Coral Bay Club",
+    "date": "2026-03-02",
+    "time": "18:30",
+    "organizer": "Harbor Collective",
+    "organizerAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    "category": "Wedding",
+    "status": "completed",
+    "startingPrice": 30,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 245,
+        "capacity": 30,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 55,
+        "capacity": 125,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 30,
+        "capacity": 45,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 150,
+        "capacity": 50,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-030",
+    "eventId": "evt-030",
+    "title": "Corporate Summit #3",
+    "description": "Executive summit with keynote, breakouts, and networking.",
+    "coverImage": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=1000&q=80",
+    "location": "Villa Gardens",
+    "date": "2026-09-03",
+    "time": "19:30",
+    "organizer": "Skyline Social",
+    "organizerAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+    "category": "Corporate",
+    "status": "upcoming",
+    "startingPrice": 40,
+    "remainingTickets": 69,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 195,
+        "capacity": 10,
+        "remaining": 10,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 95,
+        "capacity": 40,
+        "remaining": 31,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 40,
+        "capacity": 14,
+        "remaining": 14,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 105,
+        "capacity": 16,
+        "remaining": 14,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-031",
+    "eventId": "evt-031",
+    "title": "Charity Gala #3",
+    "description": "Black-tie fundraiser with auction and live performances.",
+    "coverImage": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1000&q=80",
+    "location": "Skyline Gallery",
+    "date": "2026-07-06",
+    "time": "18:15",
+    "organizer": "Martisoor Hosts",
+    "organizerAvatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
+    "category": "Gala",
+    "status": "completed",
+    "startingPrice": 45,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 220,
+        "capacity": 10,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 45,
+        "capacity": 30,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 11,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-033",
+    "eventId": "evt-033",
+    "title": "Eid Celebration #3",
+    "description": "Festive host gathering with sweets, music, and family tables.",
+    "coverImage": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1000&q=80",
+    "location": "Seaside Terrace",
+    "date": "2026-07-17",
+    "time": "20:00",
+    "organizer": "Gold Room Events",
+    "organizerAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+    "category": "Celebration",
+    "status": "completed",
+    "startingPrice": 65,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 270,
+        "capacity": 24,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 65,
+        "capacity": 100,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 36,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 150,
+        "capacity": 40,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-035",
+    "eventId": "evt-035",
+    "title": "Rooftop Sunset #3",
+    "description": "Golden-hour cocktails above the city skyline.",
+    "coverImage": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1000&q=80",
+    "location": "Liido Pavilion, Mogadishu",
+    "date": "2026-05-09",
+    "time": "12:00",
+    "organizer": "Pearl Productions",
+    "organizerAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80",
+    "category": "Social",
+    "status": "completed",
+    "startingPrice": 85,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 85,
+        "capacity": 75,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 27,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 105,
+        "capacity": 30,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-036",
+    "eventId": "evt-036",
+    "title": "Chef Table #3",
+    "description": "Multi-course tasting for a limited guest list.",
+    "coverImage": "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=1000&q=80",
+    "location": "Gold Room, City Center",
+    "date": "2026-03-23",
+    "time": "19:30",
+    "organizer": "Skyline Social",
+    "organizerAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+    "category": "Dining",
+    "status": "completed",
+    "startingPrice": 30,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 145,
+        "capacity": 10,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 95,
+        "capacity": 30,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 30,
+        "capacity": 11,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-037",
+    "eventId": "evt-037",
+    "title": "Harbor Evening Soirée #4",
+    "description": "An intimate coastal gathering with live music and curated dining.",
+    "coverImage": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1000&q=80",
+    "location": "Martisoor Studio Loft",
+    "date": "2026-03-14",
+    "time": "12:30",
+    "organizer": "Martisoor Hosts",
+    "organizerAvatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
+    "category": "Soirée",
+    "status": "completed",
+    "startingPrice": 35,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 170,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 45,
+        "capacity": 50,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 35,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 135,
+        "capacity": 20,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-039",
+    "eventId": "evt-039",
+    "title": "Garden Brunch #4",
+    "description": "Daytime celebration with botanical styling and open-air seating.",
+    "coverImage": "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1000&q=80",
+    "location": "Skyline Gallery",
+    "date": "2026-03-19",
+    "time": "12:30",
+    "organizer": "Gold Room Events",
+    "organizerAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+    "category": "Brunch",
+    "status": "completed",
+    "startingPrice": 65,
+    "remainingTickets": 0,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 220,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 65,
+        "capacity": 50,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 90,
+        "capacity": 20,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-040",
+    "eventId": "evt-040",
+    "title": "Listening Night #4",
+    "description": "Acoustic evening with seated hospitality and signature pours.",
+    "coverImage": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=1000&q=80",
+    "location": "Seaside Terrace",
+    "date": "2026-05-14",
+    "time": "18:30",
+    "organizer": "Martisoor Hosts",
+    "organizerAvatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&q=80",
+    "category": "Concert",
+    "status": "completed",
+    "startingPrice": 35,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 170,
+        "capacity": 10,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 45,
+        "capacity": 40,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 35,
+        "capacity": 14,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 16,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-042",
+    "eventId": "evt-042",
+    "title": "Corporate Summit #4",
+    "description": "Executive summit with keynote, breakouts, and networking.",
+    "coverImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1000&q=80",
+    "location": "Coral Bay Club",
+    "date": "2026-07-17",
+    "time": "11:15",
+    "organizer": "Gold Room Events",
+    "organizerAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+    "category": "Corporate",
+    "status": "completed",
+    "startingPrice": 65,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 220,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 65,
+        "capacity": 50,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 150,
+        "capacity": 20,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-045",
+    "eventId": "evt-045",
+    "title": "Eid Celebration #4",
+    "description": "Festive host gathering with sweets, music, and family tables.",
+    "coverImage": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1000&q=80",
+    "location": "Martisoor Studio Loft",
+    "date": "2026-03-16",
+    "time": "18:00",
+    "organizer": "Skyline Social",
+    "organizerAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+    "category": "Celebration",
+    "status": "completed",
+    "startingPrice": 95,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 295,
+        "capacity": 10,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 95,
+        "capacity": 20,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "free",
+        "price": 0,
+        "capacity": 8,
+        "remaining": 0,
+        "description": "Complimentary community seats while available."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 120,
+        "capacity": 8,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-047",
+    "eventId": "evt-047",
+    "title": "Rooftop Sunset #4",
+    "description": "Golden-hour cocktails above the city skyline.",
+    "coverImage": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1000&q=80",
+    "location": "Skyline Gallery",
+    "date": "2026-09-02",
+    "time": "19:00",
+    "organizer": "Harbor Collective",
+    "organizerAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    "category": "Social",
+    "status": "upcoming",
+    "startingPrice": 30,
+    "remainingTickets": 46,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 145,
+        "capacity": 10,
+        "remaining": 7,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 55,
+        "capacity": 30,
+        "remaining": 21,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 30,
+        "capacity": 11,
+        "remaining": 9,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 150,
+        "capacity": 12,
+        "remaining": 9,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-048",
+    "eventId": "evt-048",
+    "title": "Chef Table #4",
+    "description": "Multi-course tasting for a limited guest list.",
+    "coverImage": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1000&q=80",
+    "location": "Olive Grove Estate",
+    "date": "2026-08-14",
+    "time": "12:30",
+    "organizer": "Gold Room Events",
+    "organizerAvatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+    "category": "Dining",
+    "status": "upcoming",
+    "startingPrice": 35,
+    "remainingTickets": 189,
+    "featured": true,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 170,
+        "capacity": 24,
+        "remaining": 28,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 65,
+        "capacity": 100,
+        "remaining": 85,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 35,
+        "capacity": 36,
+        "remaining": 38,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 90,
+        "capacity": 40,
+        "remaining": 38,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  },
+  {
+    "id": "mkt-050",
+    "eventId": "evt-050",
+    "title": "Founders Dinner #5",
+    "description": "Private dinner for partners and early supporters.",
+    "coverImage": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=1000&q=80",
+    "location": "Martisoor Studio Loft",
+    "date": "2026-06-21",
+    "time": "11:15",
+    "organizer": "Harbor Collective",
+    "organizerAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    "category": "Dinner",
+    "status": "completed",
+    "startingPrice": 30,
+    "remainingTickets": 0,
+    "featured": false,
+    "tiers": [
+      {
+        "id": "vip",
+        "name": "VIP",
+        "pricingMode": "paid",
+        "price": 145,
+        "capacity": 12,
+        "remaining": 0,
+        "description": "Front access, lounge, and host greeting."
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "pricingMode": "paid",
+        "price": 55,
+        "capacity": 50,
+        "remaining": 0,
+        "description": "General admission with full program access."
+      },
+      {
+        "id": "student",
+        "name": "Student",
+        "pricingMode": "paid",
+        "price": 30,
+        "capacity": 18,
+        "remaining": 0,
+        "description": "Valid student ID required at entry."
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "pricingMode": "paid",
+        "price": 135,
+        "capacity": 20,
+        "remaining": 0,
+        "description": "Entry for up to four guests at one table."
+      }
+    ]
+  }
+]

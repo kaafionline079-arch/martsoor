@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dst-001",
+    "recipient": "Venue Partner",
+    "role": "Venue",
+    "amount": 16192,
+    "percent": 22,
+    "status": "scheduled"
+  },
+  {
+    "id": "dst-002",
+    "recipient": "Catering Collective",
+    "role": "Catering",
+    "amount": 11776,
+    "percent": 16,
+    "status": "pending"
+  },
+  {
+    "id": "dst-003",
+    "recipient": "Talent & Music",
+    "role": "Entertainment",
+    "amount": 7360,
+    "percent": 10,
+    "status": "pending"
+  },
+  {
+    "id": "dst-004",
+    "recipient": "Floral Atelier",
+    "role": "Decor",
+    "amount": 5152,
+    "percent": 7,
+    "status": "scheduled"
+  },
+  {
+    "id": "dst-005",
+    "recipient": "Martisoor Host Fee",
+    "role": "Platform",
+    "amount": 3680,
+    "percent": 5,
+    "status": "paid"
+  },
+  {
+    "id": "dst-006",
+    "recipient": "Security Detail",
+    "role": "Operations",
+    "amount": 2944,
+    "percent": 4,
+    "status": "paid"
+  }
+]

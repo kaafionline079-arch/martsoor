@@ -1,0 +1,401 @@
+{
+  "totalTickets": 606,
+  "totalRevenue": 86485,
+  "byType": [
+    {
+      "type": "General",
+      "count": 115,
+      "revenue": 5330
+    },
+    {
+      "type": "Student",
+      "count": 119,
+      "revenue": 2905
+    },
+    {
+      "type": "Founders",
+      "count": 112,
+      "revenue": 19750
+    },
+    {
+      "type": "VIP",
+      "count": 130,
+      "revenue": 18180
+    },
+    {
+      "type": "Table",
+      "count": 130,
+      "revenue": 40320
+    }
+  ],
+  "byStatus": [
+    {
+      "status": "valid",
+      "count": 107
+    },
+    {
+      "status": "refunded",
+      "count": 165
+    },
+    {
+      "status": "used",
+      "count": 190
+    },
+    {
+      "status": "expired",
+      "count": 144
+    }
+  ],
+  "byEvent": [
+    {
+      "eventId": "evt-001",
+      "eventTitle": "Harbor Evening Soirée",
+      "sold": 14,
+      "revenue": 2980,
+      "capacity": 60
+    },
+    {
+      "eventId": "evt-002",
+      "eventTitle": "Founders Dinner",
+      "sold": 7,
+      "revenue": 1450,
+      "capacity": 80
+    },
+    {
+      "eventId": "evt-003",
+      "eventTitle": "Garden Brunch",
+      "sold": 3,
+      "revenue": 105,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-004",
+      "eventTitle": "Listening Night",
+      "sold": 10,
+      "revenue": 2425,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-005",
+      "eventTitle": "Wedding Reception",
+      "sold": 2,
+      "revenue": 455,
+      "capacity": 40
+    },
+    {
+      "eventId": "evt-006",
+      "eventTitle": "Corporate Summit",
+      "sold": 12,
+      "revenue": 1615,
+      "capacity": 200
+    },
+    {
+      "eventId": "evt-007",
+      "eventTitle": "Charity Gala",
+      "sold": 8,
+      "revenue": 1760,
+      "capacity": 150
+    },
+    {
+      "eventId": "evt-008",
+      "eventTitle": "Product Launch",
+      "sold": 14,
+      "revenue": 1830,
+      "capacity": 60
+    },
+    {
+      "eventId": "evt-009",
+      "eventTitle": "Eid Celebration",
+      "sold": 4,
+      "revenue": 585,
+      "capacity": 150
+    },
+    {
+      "eventId": "evt-010",
+      "eventTitle": "Art Night",
+      "sold": 15,
+      "revenue": 2015,
+      "capacity": 250
+    },
+    {
+      "eventId": "evt-011",
+      "eventTitle": "Rooftop Sunset",
+      "sold": 6,
+      "revenue": 955,
+      "capacity": 40
+    },
+    {
+      "eventId": "evt-012",
+      "eventTitle": "Chef Table",
+      "sold": 5,
+      "revenue": 1335,
+      "capacity": 40
+    },
+    {
+      "eventId": "evt-013",
+      "eventTitle": "Harbor Evening Soirée #2",
+      "sold": 11,
+      "revenue": 2850,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-014",
+      "eventTitle": "Founders Dinner #2",
+      "sold": 11,
+      "revenue": 2060,
+      "capacity": 40
+    },
+    {
+      "eventId": "evt-015",
+      "eventTitle": "Garden Brunch #2",
+      "sold": 5,
+      "revenue": 780,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-016",
+      "eventTitle": "Listening Night #2",
+      "sold": 9,
+      "revenue": 2435,
+      "capacity": 80
+    },
+    {
+      "eventId": "evt-017",
+      "eventTitle": "Wedding Reception #2",
+      "sold": 15,
+      "revenue": 2410,
+      "capacity": 150
+    },
+    {
+      "eventId": "evt-018",
+      "eventTitle": "Corporate Summit #2",
+      "sold": 10,
+      "revenue": 2485,
+      "capacity": 200
+    },
+    {
+      "eventId": "evt-019",
+      "eventTitle": "Charity Gala #2",
+      "sold": 11,
+      "revenue": 2820,
+      "capacity": 80
+    },
+    {
+      "eventId": "evt-020",
+      "eventTitle": "Product Launch #2",
+      "sold": 13,
+      "revenue": 3305,
+      "capacity": 200
+    },
+    {
+      "eventId": "evt-021",
+      "eventTitle": "Eid Celebration #2",
+      "sold": 3,
+      "revenue": 350,
+      "capacity": 60
+    },
+    {
+      "eventId": "evt-022",
+      "eventTitle": "Art Night #2",
+      "sold": 11,
+      "revenue": 2765,
+      "capacity": 150
+    },
+    {
+      "eventId": "evt-023",
+      "eventTitle": "Rooftop Sunset #2",
+      "sold": 10,
+      "revenue": 1830,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-024",
+      "eventTitle": "Chef Table #2",
+      "sold": 2,
+      "revenue": 215,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-025",
+      "eventTitle": "Harbor Evening Soirée #3",
+      "sold": 2,
+      "revenue": 455,
+      "capacity": 120
+    },
+    {
+      "eventId": "evt-026",
+      "eventTitle": "Founders Dinner #3",
+      "sold": 14,
+      "revenue": 3070,
+      "capacity": 60
+    },
+    {
+      "eventId": "evt-027",
+      "eventTitle": "Garden Brunch #3",
+      "sold": 11,
+      "revenue": 2690,
+      "capacity": 120
+    },
+    {
+      "eventId": "evt-028",
+      "eventTitle": "Listening Night #3",
+      "sold": 14,
+      "revenue": 3170,
+      "capacity": 200
+    },
+    {
+      "eventId": "evt-029",
+      "eventTitle": "Wedding Reception #3",
+      "sold": 9,
+      "revenue": 1880,
+      "capacity": 250
+    },
+    {
+      "eventId": "evt-030",
+      "eventTitle": "Corporate Summit #3",
+      "sold": 11,
+      "revenue": 1790,
+      "capacity": 80
+    },
+    {
+      "eventId": "evt-031",
+      "eventTitle": "Charity Gala #3",
+      "sold": 12,
+      "revenue": 2385,
+      "capacity": 60
+    },
+    {
+      "eventId": "evt-032",
+      "eventTitle": "Product Launch #3",
+      "sold": 2,
+      "revenue": 215,
+      "capacity": 40
+    },
+    {
+      "eventId": "evt-033",
+      "eventTitle": "Eid Celebration #3",
+      "sold": 10,
+      "revenue": 1870,
+      "capacity": 200
+    },
+    {
+      "eventId": "evt-034",
+      "eventTitle": "Art Night #3",
+      "sold": 5,
+      "revenue": 320,
+      "capacity": 120
+    },
+    {
+      "eventId": "evt-035",
+      "eventTitle": "Rooftop Sunset #3",
+      "sold": 13,
+      "revenue": 2515,
+      "capacity": 150
+    },
+    {
+      "eventId": "evt-036",
+      "eventTitle": "Chef Table #3",
+      "sold": 13,
+      "revenue": 2625,
+      "capacity": 60
+    },
+    {
+      "eventId": "evt-037",
+      "eventTitle": "Harbor Evening Soirée #4",
+      "sold": 10,
+      "revenue": 1930,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-038",
+      "eventTitle": "Founders Dinner #4",
+      "sold": 4,
+      "revenue": 1295,
+      "capacity": 150
+    },
+    {
+      "eventId": "evt-039",
+      "eventTitle": "Garden Brunch #4",
+      "sold": 13,
+      "revenue": 2050,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-040",
+      "eventTitle": "Listening Night #4",
+      "sold": 14,
+      "revenue": 3190,
+      "capacity": 80
+    },
+    {
+      "eventId": "evt-041",
+      "eventTitle": "Wedding Reception #4",
+      "sold": 5,
+      "revenue": 1450,
+      "capacity": 40
+    },
+    {
+      "eventId": "evt-042",
+      "eventTitle": "Corporate Summit #4",
+      "sold": 10,
+      "revenue": 1570,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-043",
+      "eventTitle": "Charity Gala #4",
+      "sold": 5,
+      "revenue": 1335,
+      "capacity": 200
+    },
+    {
+      "eventId": "evt-044",
+      "eventTitle": "Product Launch #4",
+      "sold": 5,
+      "revenue": 950,
+      "capacity": 80
+    },
+    {
+      "eventId": "evt-045",
+      "eventTitle": "Eid Celebration #4",
+      "sold": 10,
+      "revenue": 1435,
+      "capacity": 40
+    },
+    {
+      "eventId": "evt-046",
+      "eventTitle": "Art Night #4",
+      "sold": 1,
+      "revenue": 420,
+      "capacity": 100
+    },
+    {
+      "eventId": "evt-047",
+      "eventTitle": "Rooftop Sunset #4",
+      "sold": 14,
+      "revenue": 1775,
+      "capacity": 60
+    },
+    {
+      "eventId": "evt-048",
+      "eventTitle": "Chef Table #4",
+      "sold": 12,
+      "revenue": 2145,
+      "capacity": 200
+    },
+    {
+      "eventId": "evt-049",
+      "eventTitle": "Harbor Evening Soirée #5",
+      "sold": 3,
+      "revenue": 750,
+      "capacity": 150
+    },
+    {
+      "eventId": "evt-050",
+      "eventTitle": "Founders Dinner #5",
+      "sold": 8,
+      "revenue": 1390,
+      "capacity": 100
+    }
+  ]
+}

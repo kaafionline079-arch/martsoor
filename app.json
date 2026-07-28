@@ -1,25 +1,55 @@
 {
   "expo": {
-    "name": "Maritsoor",
-    "slug": "Maritsoor",
+    "name": "Martisoor",
+    "slug": "martisoor",
     "version": "1.0.0",
     "orientation": "portrait",
+    "scheme": "martisoor",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/95563a88-3ae4-45a5-ab72-fea3c02b1b02"
+    },
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.martisoor.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Martisoor uses the camera only for future QR scanning features. Current builds use a mock scanner."
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0A0A0A",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "package": "com.martisoor.app",
+      "softwareKeyboardLayoutMode": "resize",
+      "predictiveBackGestureEnabled": false,
+      "usesCleartextTraffic": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "dataMode": "api",
+      "authMode": "real",
+      "eas": {
+        "projectId": "95563a88-3ae4-45a5-ab72-fea3c02b1b02"
+      }
+    },
+    "owner": "mohamedabdy"
   }
 }

@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-07-27T12:00:00.000Z",
+  "periods": [
+    {
+      "id": "rep-2026-q1",
+      "label": "Q1 2026",
+      "from": "2026-01-01",
+      "to": "2026-03-31",
+      "eventsHeld": 7,
+      "guestsHosted": 54,
+      "ticketsSold": 87,
+      "revenue": 18040,
+      "expenses": 7274.68,
+      "net": 10765.32,
+      "attendanceRate": 33
+    },
+    {
+      "id": "rep-2026-q2",
+      "label": "Q2 2026",
+      "from": "2026-04-01",
+      "to": "2026-06-30",
+      "eventsHeld": 11,
+      "guestsHosted": 143,
+      "ticketsSold": 165,
+      "revenue": 32790,
+      "expenses": 14585.92,
+      "net": 18204.08,
+      "attendanceRate": 28.26
+    },
+    {
+      "id": "rep-2026-jul",
+      "label": "July 2026",
+      "from": "2026-07-01",
+      "to": "2026-07-31",
+      "eventsHeld": 5,
+      "guestsHosted": 40,
+      "ticketsSold": 61,
+      "revenue": 11970,
+      "expenses": 4246.83,
+      "net": 7723.17,
+      "attendanceRate": 40
+    },
+    {
+      "id": "rep-ytd",
+      "label": "Year to date",
+      "from": "2026-01-01",
+      "to": "2026-07-27",
+      "eventsHeld": 23,
+      "guestsHosted": 237,
+      "ticketsSold": 313,
+      "revenue": 62800,
+      "expenses": 25049.45,
+      "net": 37750.55,
+      "attendanceRate": 31.28
+    }
+  ],
+  "topEvents": [
+    {
+      "eventId": "evt-020",
+      "title": "Product Launch #2",
+      "revenue": 3305,
+      "attendanceRate": 50
+    },
+    {
+      "eventId": "evt-040",
+      "title": "Listening Night #4",
+      "revenue": 3190,
+      "attendanceRate": 30
+    },
+    {
+      "eventId": "evt-028",
+      "title": "Listening Night #3",
+      "revenue": 3170,
+      "attendanceRate": 40
+    },
+    {
+      "eventId": "evt-026",
+      "title": "Founders Dinner #3",
+      "revenue": 3070,
+      "attendanceRate": 30
+    },
+    {
+      "eventId": "evt-001",
+      "title": "Harbor Evening Soirée",
+      "revenue": 2980,
+      "attendanceRate": 30
+    },
+    {
+      "eventId": "evt-013",
+      "title": "Harbor Evening Soirée #2",
+      "revenue": 2850,
+      "attendanceRate": 30
+    },
+    {
+      "eventId": "evt-019",
+      "title": "Charity Gala #2",
+      "revenue": 2820,
+      "attendanceRate": 50
+    },
+    {
+      "eventId": "evt-022",
+      "title": "Art Night #2",
+      "revenue": 2765,
+      "attendanceRate": 40
+    }
+  ],
+  "highlights": [
+    "9 upcoming events on the calendar",
+    "500 guests across the portfolio",
+    "606 tickets issued for $86,485",
+    "41.6% invitation acceptance rate",
+    "Wallet available balance $39,042.84"
+  ]
+}

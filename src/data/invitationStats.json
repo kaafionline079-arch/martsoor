@@ -1,0 +1,19 @@
+{
+  "total": 500,
+  "byStatus": {
+    "draft": 0,
+    "sent": 25,
+    "delivered": 35,
+    "opened": 113,
+    "accepted": 208,
+    "declined": 88,
+    "expired": 31
+  },
+  "byChannel": {
+    "email": 176,
+    "sms": 170,
+    "whatsapp": 154
+  },
+  "acceptanceRate": 41.6,
+  "openRate": 81.8
+}

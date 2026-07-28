@@ -1,0 +1,51 @@
+[
+  {
+    "id": "vip",
+    "name": "VIP",
+    "description": "Priority guests and hosts of honor",
+    "color": "#C9A34E",
+    "guestCount": 58
+  },
+  {
+    "id": "general",
+    "name": "General",
+    "description": "Standard event attendees",
+    "color": "#5C6690",
+    "guestCount": 136
+  },
+  {
+    "id": "family",
+    "name": "Family",
+    "description": "Family and close relations",
+    "color": "#1F9D6A",
+    "guestCount": 64
+  },
+  {
+    "id": "media",
+    "name": "Media",
+    "description": "Press and content creators",
+    "color": "#3B6FD9",
+    "guestCount": 57
+  },
+  {
+    "id": "staff",
+    "name": "Staff",
+    "description": "Working team on site",
+    "color": "#8891B8",
+    "guestCount": 48
+  },
+  {
+    "id": "sponsor",
+    "name": "Sponsor",
+    "description": "Brand and partner guests",
+    "color": "#A8863A",
+    "guestCount": 65
+  },
+  {
+    "id": "speaker",
+    "name": "Speaker",
+    "description": "Speakers and performers",
+    "color": "#11152D",
+    "guestCount": 72
+  }
+]

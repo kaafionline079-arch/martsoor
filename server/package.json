@@ -1,0 +1,20 @@
+{
+  "name": "martisoor-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "migrate": "node scripts/migrate.mjs"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.4",
+    "@neondatabase/serverless": "^1.0.1",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "hono": "^4.8.3",
+    "jose": "^6.0.11",
+    "ws": "^8.21.1"
+  }
+}
