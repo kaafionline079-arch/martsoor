@@ -18,7 +18,7 @@
         "buildType": "apk"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "http://10.135.186.81:3001"
+        "EXPO_PUBLIC_API_URL": "https://martsoor.onrender.com"
       }
     },
     "production": {
@@ -27,7 +27,7 @@
         "buildType": "app-bundle"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "http://10.135.186.81:3001"
+        "EXPO_PUBLIC_API_URL": "https://martsoor.onrender.com"
       }
     }
   },
