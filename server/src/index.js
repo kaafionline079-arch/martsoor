@@ -9,8 +9,13 @@ import bcrypt from 'bcryptjs';
 import { SignJWT, jwtVerify } from 'jose';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+// Local root / server .env, plus Render Secret Files if uploaded
 config({ path: join(__dirname, '../../.env') });
 config({ path: join(__dirname, '../.env') });
+config({ path: '/etc/secrets/.env' });
+config({ path: '/etc/secrets/render.env' });
+config({ path: join(process.cwd(), 'render.env') });
+config({ path: join(process.cwd(), '.env') });
 
 const DATABASE_URL = process.env.DATABASE_URL;
 const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret';
