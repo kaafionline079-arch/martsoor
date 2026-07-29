@@ -2,9 +2,15 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AppError } from '@/utils/errors';
 
 const TOKEN_KEY = 'martisoor-api-token';
+const DEFAULT_API_URL = 'https://martsoor.onrender.com';
+const REQUEST_TIMEOUT_MS = 90_000;
+const MAX_ATTEMPTS = 3;
 
 function apiBase() {
-  const url = process.env.EXPO_PUBLIC_API_URL?.replace(/\/$/, '');
+  const url = (process.env.EXPO_PUBLIC_API_URL || DEFAULT_API_URL).replace(
+    /\/$/,
+    '',
+  );
   if (!url) {
     throw new AppError(
       'API URL not configured. Set EXPO_PUBLIC_API_URL in .env',
@@ -29,6 +35,24 @@ type RequestOptions = {
   auth?: boolean;
 };
 
+async function sleep(ms: number) {
+  await new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function fetchWithTimeout(
+  url: string,
+  init: RequestInit,
+  timeoutMs: number,
+): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...init, signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 export async function api<T = unknown>(
   path: string,
   options: RequestOptions = {},
@@ -44,31 +68,48 @@ export async function api<T = unknown>(
     if (token) headers.Authorization = `Bearer ${token}`;
   }
 
-  let res: Response;
-  try {
-    res = await fetch(`${apiBase()}${path}`, {
-      method,
-      headers,
-      body: body != null ? JSON.stringify(body) : undefined,
-    });
-  } catch {
-    throw new AppError(
-      'Cannot reach API. Start the server and check EXPO_PUBLIC_API_URL.',
-      'NETWORK',
-    );
+  const base = apiBase();
+  const url = `${base}${path}`;
+  const init: RequestInit = {
+    method,
+    headers,
+    body: body != null ? JSON.stringify(body) : undefined,
+  };
+
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    try {
+      const res = await fetchWithTimeout(url, init, REQUEST_TIMEOUT_MS);
+      const data = (await res.json().catch(() => ({}))) as {
+        error?: string;
+        message?: string;
+      } & T;
+
+      if (!res.ok) {
+        throw new AppError(
+          data.error || data.message || `Request failed (${res.status})`,
+          'API_ERROR',
+        );
+      }
+
+      return data;
+    } catch (error) {
+      if (error instanceof AppError && error.code === 'API_ERROR') {
+        throw error;
+      }
+      lastError = error;
+      if (attempt < MAX_ATTEMPTS) {
+        await sleep(1500 * attempt);
+      }
+    }
   }
 
-  const data = (await res.json().catch(() => ({}))) as {
-    error?: string;
-    message?: string;
-  } & T;
-
-  if (!res.ok) {
-    throw new AppError(
-      data.error || data.message || `Request failed (${res.status})`,
-      'API_ERROR',
-    );
-  }
-
-  return data;
+  const reason =
+    lastError instanceof Error && lastError.name === 'AbortError'
+      ? 'timed out'
+      : 'unreachable';
+  throw new AppError(
+    `Cannot reach API (${reason}): ${base}. Open that URL in your phone browser, wait, then try login again.`,
+    'NETWORK',
+  );
 }
