@@ -14,6 +14,7 @@ import { loginSchema, type LoginFormValues } from '@/features/auth/schemas';
 import { useAuthStore } from '@/store';
 import { AnimatedPressable } from '@/components/shared/AnimatedPressable';
 import { useI18n } from '@/i18n';
+import { isMockMode, MOCK_AUTH } from '@/constants/mockAuth';
 import type { AuthStackParamList } from '@/navigation/types';
 
 export function LoginScreen() {
@@ -30,8 +31,8 @@ export function LoginScreen() {
   } = useForm<LoginFormValues>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
-      email: '',
-      password: '',
+      email: isMockMode ? MOCK_AUTH.email : '',
+      password: isMockMode ? MOCK_AUTH.password : '',
     },
   });
 

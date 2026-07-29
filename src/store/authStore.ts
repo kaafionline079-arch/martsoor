@@ -3,6 +3,12 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { authApi } from '@/api';
 import { AppError } from '@/utils/errors';
+import {
+  isMockMode,
+  MOCK_AUTH,
+  MOCK_TOKEN,
+  MOCK_USER,
+} from '@/constants/mockAuth';
 import type { User } from '@/types';
 
 type AuthState = {
@@ -24,6 +30,10 @@ type AuthState = {
   setHydrated: (value: boolean) => void;
 };
 
+function normalizeEmail(email: string) {
+  return email.trim().toLowerCase();
+}
+
 export const useAuthStore = create<AuthState>()(
   persist(
     (set, get) => ({
@@ -33,6 +43,24 @@ export const useAuthStore = create<AuthState>()(
       isHydrated: false,
       hydrated: false,
       login: async (email, password) => {
+        if (isMockMode) {
+          if (
+            normalizeEmail(email) !== normalizeEmail(MOCK_AUTH.email) ||
+            password !== MOCK_AUTH.password
+          ) {
+            throw new AppError(
+              `Mock login: isticmaal ${MOCK_AUTH.email} / ${MOCK_AUTH.password}`,
+              'INVALID_CREDENTIALS',
+            );
+          }
+          await authApi.persistToken(MOCK_TOKEN);
+          set({
+            token: MOCK_TOKEN,
+            user: MOCK_USER,
+            isAuthenticated: true,
+          });
+          return;
+        }
         const { token, user } = await authApi.login({ email, password });
         await authApi.persistToken(token);
         set({ token, user, isAuthenticated: true });
@@ -40,6 +68,18 @@ export const useAuthStore = create<AuthState>()(
       register: async (name, email, password, phone) => {
         if (name.trim().length < 2) {
           throw new AppError('Enter your full name.', 'INVALID_NAME');
+        }
+        if (isMockMode) {
+          const user: User = {
+            ...MOCK_USER,
+            id: `usr-mock-${Date.now()}`,
+            name: name.trim(),
+            email: normalizeEmail(email),
+            phone: phone?.trim() || MOCK_AUTH.phone,
+          };
+          await authApi.persistToken(MOCK_TOKEN);
+          set({ token: MOCK_TOKEN, user, isAuthenticated: true });
+          return;
         }
         const { token, user } = await authApi.register({
           name,
@@ -55,6 +95,20 @@ export const useAuthStore = create<AuthState>()(
         set({ token: null, user: null, isAuthenticated: false });
       },
       updateProfile: async (patch) => {
+        if (isMockMode) {
+          const current = get().user;
+          if (!current) return;
+          set({
+            user: {
+              ...current,
+              ...patch,
+              address: patch.address
+                ? { ...current.address, ...patch.address }
+                : current.address,
+            },
+          });
+          return;
+        }
         const { user } = await authApi.updateMe({
           name: patch.name,
           phone: patch.phone,
@@ -63,6 +117,13 @@ export const useAuthStore = create<AuthState>()(
       },
       refreshMe: async () => {
         if (!get().token) return;
+        if (isMockMode) {
+          set({
+            user: get().user || MOCK_USER,
+            isAuthenticated: true,
+          });
+          return;
+        }
         try {
           const { user } = await authApi.me();
           set({ user, isAuthenticated: true });
@@ -82,6 +143,20 @@ export const useAuthStore = create<AuthState>()(
         isAuthenticated: state.isAuthenticated,
       }),
       onRehydrateStorage: () => async (state) => {
+        if (isMockMode) {
+          if (state?.token) {
+            await authApi.persistToken(state.token);
+            useAuthStore.setState({
+              user: state.user || MOCK_USER,
+              isAuthenticated: true,
+              isHydrated: true,
+              hydrated: true,
+            });
+            return;
+          }
+          useAuthStore.setState({ isHydrated: true, hydrated: true });
+          return;
+        }
         if (state?.token) {
           await authApi.persistToken(state.token);
           try {

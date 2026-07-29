@@ -44,8 +44,8 @@
       "expo-font"
     ],
     "extra": {
-      "dataMode": "api",
-      "authMode": "real",
+      "dataMode": "mock",
+      "authMode": "mock",
       "eas": {
         "projectId": "95563a88-3ae4-45a5-ab72-fea3c02b1b02"
       }

@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { walletApi } from '@/api';
+import { isMockMode } from '@/constants/mockAuth';
 import type {
   DistributionItem,
   PaymentTransaction,
@@ -77,7 +78,7 @@ function mapWallet(balance: number, updatedAt?: string): Wallet {
 }
 
 export const useWalletStore = create<WalletState>((set, get) => ({
-  wallet: emptyWallet,
+  wallet: isMockMode ? mapWallet(250) : emptyWallet,
   distributions: [],
   transactions: [],
   attempts: [],
@@ -85,6 +86,10 @@ export const useWalletStore = create<WalletState>((set, get) => ({
   hydrated: false,
   loading: false,
   fetchWallet: async () => {
+    if (isMockMode) {
+      set({ hydrated: true, loading: false });
+      return;
+    }
     set({ loading: true });
     try {
       const [{ wallet, distributions }, { transactions }, accountRes] =
@@ -113,13 +118,14 @@ export const useWalletStore = create<WalletState>((set, get) => ({
           date: t.createdAt,
           status: 'completed',
         })),
-        paymentAccount: accountRes.connected && accountRes.account
-          ? {
-              provider: accountRes.account.provider,
-              accountNumber: accountRes.account.accountNumber,
-              connectedAt: accountRes.account.connectedAt,
-            }
-          : null,
+        paymentAccount:
+          accountRes.connected && accountRes.account
+            ? {
+                provider: accountRes.account.provider,
+                accountNumber: accountRes.account.accountNumber,
+                connectedAt: accountRes.account.connectedAt,
+              }
+            : null,
         hydrated: true,
         loading: false,
       });
@@ -133,6 +139,63 @@ export const useWalletStore = create<WalletState>((set, get) => ({
   confirmPayment: async (distributionId, options) => {
     const item = get().distributions.find((d) => d.id === distributionId);
     if (!item) return null;
+
+    if (isMockMode) {
+      const fail = Boolean(options?.forceFail);
+      const balance = get().wallet.balance;
+      if (!fail && balance < item.amount) {
+        const attempt: WalletPaymentAttempt = {
+          id: `pay-${Date.now()}`,
+          distributionId: item.id,
+          recipient: item.recipient,
+          role: item.role,
+          amount: item.amount,
+          status: 'failed',
+          createdAt: new Date().toISOString(),
+          reference: `PAY-FAIL-${Date.now().toString().slice(-8)}`,
+          failureReason: 'Balance kuma filna.',
+        };
+        set((state) => ({ attempts: [attempt, ...state.attempts] }));
+        return attempt;
+      }
+      const attempt: WalletPaymentAttempt = {
+        id: `pay-${Date.now()}`,
+        distributionId: item.id,
+        recipient: item.recipient,
+        role: item.role,
+        amount: item.amount,
+        status: fail ? 'failed' : 'success',
+        createdAt: new Date().toISOString(),
+        reference: `PAY-${Date.now().toString().slice(-8)}`,
+        failureReason: fail ? 'Mock payment failed' : undefined,
+      };
+      set((state) => ({
+        attempts: [attempt, ...state.attempts],
+        wallet: fail
+          ? state.wallet
+          : mapWallet(state.wallet.balance - item.amount),
+        distributions: fail
+          ? state.distributions
+          : state.distributions.map((d) =>
+              d.id === distributionId ? { ...d, status: 'paid' as const } : d,
+            ),
+        transactions: fail
+          ? state.transactions
+          : [
+              {
+                id: `txn-${Date.now()}`,
+                title: `Payout · ${item.recipient}`,
+                amount: item.amount,
+                type: 'debit' as const,
+                category: 'Wallet',
+                date: new Date().toISOString(),
+                status: 'completed' as const,
+              },
+              ...state.transactions,
+            ],
+      }));
+      return attempt;
+    }
 
     try {
       const res = await walletApi.payout(distributionId, {
@@ -186,11 +249,34 @@ export const useWalletStore = create<WalletState>((set, get) => ({
     }
   },
   distributeAll: async () => {
+    if (isMockMode) {
+      return 'Mock: distributions ready.';
+    }
     const res = await walletApi.distribute();
     await get().fetchWallet();
     return res.message;
   },
   connectAccount: async (input) => {
+    if (isMockMode) {
+      const granted = get().paymentAccount ? 0 : 250;
+      const balance = get().paymentAccount
+        ? get().wallet.balance
+        : Math.max(get().wallet.balance, 250);
+      set({
+        paymentAccount: {
+          provider: input.provider,
+          accountNumber: input.accountNumber,
+          connectedAt: new Date().toISOString(),
+        },
+        wallet: mapWallet(balance),
+      });
+      return {
+        message: granted
+          ? `Mock: account connected. $${granted} ayaa lagu daray.`
+          : 'Mock: account already connected.',
+        granted,
+      };
+    }
     const res = await walletApi.connect(input);
     set({
       paymentAccount: {
@@ -204,6 +290,31 @@ export const useWalletStore = create<WalletState>((set, get) => ({
     return { message: res.message, granted: res.granted };
   },
   purchaseTicket: async (input) => {
+    if (isMockMode) {
+      const amount = Number(input.amount) || 0;
+      if (amount <= 0) {
+        return { ok: true, message: 'Free ticket (mock).', free: true };
+      }
+      if (get().wallet.balance < amount) {
+        return { ok: false, message: 'Balance kuma filna.' };
+      }
+      set((state) => ({
+        wallet: mapWallet(state.wallet.balance - amount),
+        transactions: [
+          {
+            id: `txn-${Date.now()}`,
+            title: `Ticket · ${input.eventTitle}`,
+            amount,
+            type: 'debit',
+            category: 'Tickets',
+            date: new Date().toISOString(),
+            status: 'completed',
+          },
+          ...state.transactions,
+        ],
+      }));
+      return { ok: true, message: 'Ticket mock ayaa la iibsaday.' };
+    }
     try {
       const res = await walletApi.purchaseTicket(input);
       set({ wallet: mapWallet(res.wallet.balance) });
@@ -225,6 +336,36 @@ export const useWalletStore = create<WalletState>((set, get) => ({
     }
   },
   payGuests: async (input) => {
+    if (isMockMode) {
+      const payments = input.payments || [];
+      const total = payments.reduce((sum, p) => sum + (Number(p.amount) || 0), 0);
+      if (total > 0 && get().wallet.balance < total) {
+        throw new Error('Balance kuma filna.');
+      }
+      set((state) => ({
+        wallet: mapWallet(Math.max(0, state.wallet.balance - total)),
+        transactions:
+          total > 0
+            ? [
+                {
+                  id: `txn-${Date.now()}`,
+                  title: 'Pay guests (mock)',
+                  amount: total,
+                  type: 'debit' as const,
+                  category: 'Guests',
+                  date: new Date().toISOString(),
+                  status: 'completed' as const,
+                },
+                ...state.transactions,
+              ]
+            : state.transactions,
+      }));
+      return {
+        message: `${payments.length} marti mock ayaa la bixiyay.`,
+        paid: payments.length,
+        total,
+      };
+    }
     const res = await walletApi.payGuests(input);
     set({ wallet: mapWallet(res.wallet.balance) });
     await get().fetchWallet();
